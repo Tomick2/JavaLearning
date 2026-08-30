@@ -18,34 +18,40 @@ public class FourthLesson {
         Scanner scan = new Scanner(System.in);
 
         System.out.print("Enter first number: ");
-        int num1 = scan.nextInt();
+        float num1 = scan.nextInt();
 
         System.out.print("Enter an arithmetic operator: ");
         String aOperator = scan.nextLine();
         aOperator = scan.nextLine();
 
         System.out.print("Enter second number: ");
-        int num2 = scan.nextInt();
-
-        int res;
+        float num2 = scan.nextInt();
 
         switch (aOperator) {
-            case "+":
-                res = num1 + num2;
+            case "+": {
+                float res = num1 + num2;
                 System.out.println("Result: " + res);
-            break;
-            case "-":
-                res = num1 - num2;
+
+                break;
+            }
+            case "-": {
+                float res = num1 - num2;
                 System.out.println("Result: " + res);
-            break;
-            case "*":
-                res = num1 * num2;
+
+                break;
+            }
+            case "*": {
+                float res = num1 * num2;
                 System.out.println("Result: " + res);
-            break;
-            case "/":
-                res = num1 / num2;
+
+                break;
+            }
+            case "/": {
+                float res = num1 / num2;
                 System.out.println("Result: " + res);
-            break;
+
+                break;
+            }
 
             default: System.out.println(num1 + num2);
         }
